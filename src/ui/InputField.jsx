@@ -1,11 +1,12 @@
 export default function InputField({
-  type = "text",
-  name = "",
-  placeholder = "",
-  className = "",
+  type,
+  name,
+  placeholder,
+  className,
   required = false,
-  value = "",
-  onChange = "",
+  value,
+  onChange,
+  disabled,
 }) {
   return (
     <input
@@ -16,6 +17,7 @@ export default function InputField({
       value={value}
       onChange={onChange}
       required={required}
+      disabled={disabled}
     />
   );
 }
